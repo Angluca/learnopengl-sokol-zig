@@ -1,0 +1,21 @@
+.{
+    .name = "leanopengl-sokol-zig",
+    .version = "0.0.1",
+    .minimum_zig_version = "0.12.0",
+
+    .paths = .{
+        "libs",
+        "examples",
+        "build.zig",
+        "build.zig.zon",
+        "README.md",
+    },
+    .dependencies = .{
+        .sokol = .{
+            //.path = "../sokol-zig",
+            .url = "https://github.com/floooh/sokol-zig/archive/e77e89a2067fafa3505fb3056b0ce9bfa3b52943.tar.gz",
+            .hash = "1220504f1d7bb3dffcd4318776b942caf5385f894b1efbf7bb9590d1aad6664565a5",
+        },
+    },
+}
+
